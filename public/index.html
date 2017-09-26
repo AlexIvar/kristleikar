@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <canvas id="myChart"></canvas>
+    <script src="index.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+   <script>
+     var ctx = document.getElementById('myChart').getContext('2d');
+
+    new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["Lið1edeerfref", "Lið2efrefreerferf", "Lið3erfreferfer", "Lið4", "Lið5","Lið1", "Lið2", "Lið3", "Lið4", "Lið5"],
+      datasets: [
+        {
+          label: "Stig",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          borderColor: 'black',
+          borderWidth:2,
+          data: [5,5,5,5,5]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Kristleikar 2017 stig'
+      }
+    }
+});
+   </script>
+  </body>
+</html>
